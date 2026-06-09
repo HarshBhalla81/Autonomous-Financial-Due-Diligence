@@ -1,0 +1,16 @@
+langgraph
+langchain
+langchain-core
+streamlit
+pdfplumber
+unstructured
+pandas
+numpy
+python-dotenv
+mcp
+requests
+pydantic
+langchain-openai
+fastapi
+uvicorn[standard]
+python-multipart

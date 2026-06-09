@@ -22,3 +22,14 @@ class FinancialMetrics(BaseModel):
     trends: Dict[str, Dict[str, str]] = Field(default_factory=dict)
     anomalies: List[str] = Field(default_factory=list)
 
+class MarketIntelligence(BaseModel):
+    """
+    Schema for the output of the Market Intelligence Agent.
+    Contains competitor multiples and sector benchmarks gathered via external APIs.
+    """
+    target_symbol: str
+    target_metrics: Dict[str, Any] = Field(default_factory=dict)
+    competitor_metrics: Dict[str, Dict[str, Any]] = Field(default_factory=dict)
+    sector_benchmarks: Dict[str, float] = Field(default_factory=dict)
+    market_context: str = ""
+

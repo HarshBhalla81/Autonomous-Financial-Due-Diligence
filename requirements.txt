@@ -10,3 +10,4 @@ python-dotenv
 mcp
 requests
 pydantic
+langchain-openai

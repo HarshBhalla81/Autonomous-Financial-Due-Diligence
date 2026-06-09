@@ -11,3 +11,6 @@ mcp
 requests
 pydantic
 langchain-openai
+fastapi
+uvicorn[standard]
+python-multipart

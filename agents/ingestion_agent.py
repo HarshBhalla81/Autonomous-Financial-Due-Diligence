@@ -106,7 +106,7 @@ class IngestionAgent:
                 return self._fallback_normalize_tables(tables)
                 
             # Using gpt-4o-mini or gpt-3.5-turbo for speed and cost efficiency
-            llm = ChatOpenAI(model="gpt-3.5-turbo", api_key=api_key, temperature=0) 
+            llm = ChatOpenAI(model="gpt-3.5-turbo", api_key=api_key, temperature=0, max_retries=0) 
             
             prompt = PromptTemplate(
                 template="""You are a strict financial data normalization assistant.

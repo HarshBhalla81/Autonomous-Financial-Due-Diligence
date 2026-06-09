@@ -1,0 +1,12 @@
+langgraph
+langchain
+langchain-core
+streamlit
+pdfplumber
+unstructured
+pandas
+numpy
+python-dotenv
+mcp
+requests
+pydantic

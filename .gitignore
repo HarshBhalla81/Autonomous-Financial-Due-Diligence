@@ -47,3 +47,15 @@ data/*.csv
 # OS specific
 .DS_Store
 Thumbs.db
+
+# Node / Next.js frontend
+node_modules/
+.next/
+out/
+next-env.d.ts
+.vercel
+*.tsbuildinfo
+
+# Keep the Next.js lib directory (Python's "lib/" rule above ignores it otherwise)
+!lib/
+!lib/**
